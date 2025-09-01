@@ -1,9 +1,9 @@
 # LogoScope
 
 <!-- badges: start -->
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-4cc61e.png)](https://www.repostatus.org/#active)
+[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
+[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.png)](CODE_OF_CONDUCT.md)
 <!-- badges: end -->
 
 ## Overview
@@ -13,7 +13,7 @@
 > [!IMPORTANT]
 > `LogoScope` is an independent project with no affiliation to [NetLogo](https://www.netlogo.org/) or its developers.
 
-![Syntax highlighting](images/code-1.png)
+![Syntax highlighting](images/code.png)
 
 ## Installation
 
@@ -23,7 +23,7 @@ To mannually install the extension, copy the source files into the `<user home>/
 
 ## How to Contribute
 
-[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.png)](CODE_OF_CONDUCT.md)
 
 Contributions are welcome! Whether you want to report bugs, suggest features, or improve the code or documentation, your input is highly valued. Please check the [issues tab](https://github.com/danielvartan/logoscope/issues) for existing issues or to open a new one.
 
@@ -31,7 +31,7 @@ The syntax highlighting is designed to closely match NetLogo's original highligh
 
 ## License
 
-[![](https://img.shields.io/badge/license-GPLv3-bd0000.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 
 ```text
 Copyright (C) 2025 Daniel Vartanian

@@ -1,0 +1,11 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+eslint.config.mjs
+nlogo/**
+node_modules/**
+syntaxes/*.yaml
+tests/**
+tsconfig.json
+
+*.vsix
