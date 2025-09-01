@@ -1,7 +1,9 @@
+.github/**
 .vscode/**
 .vscode-test/**
 .gitignore
 eslint.config.mjs
+images/icon.svg
 nlogo/**
 node_modules/**
 syntaxes/*.yaml

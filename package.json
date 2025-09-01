@@ -1,8 +1,8 @@
 {
 	"name": "logoscope",
 	"displayName": "LogoScope",
-	"description": "NetLogo Syntax Highlighting for Visual Studio Code",
-	"version": "0.1.0",
+	"description": "NetLogo Syntax Highlighting",
+	"version": "0.1.1",
 	"publisher": "danielvartan",
 	"repository": {
 		"type": "git",

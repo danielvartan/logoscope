@@ -1,6 +1,3 @@
-# yaml > json: `npx js-yaml syntaxes/nlogox.yaml > syntaxes/nlogox.json`
-# json > yaml: `npx json2yaml syntaxes/nlogox.json > syntaxes/nlogox.yaml`
-
 name: NetLogo XML
 scopeName: source.nlogox
 

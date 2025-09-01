@@ -1,9 +1,7 @@
-## LogoScope 0.1.0.9000 (development version)
+## v0.1.1 (2025-09-01)
 
-## LogoScope 0.1.0
+- Added more keywords to the syntax highlighting based on the [NetLogo Dictionary](https://docs.netlogo.org/dictionary.html).
+
+## v0.1.0 (2025-09-01)
 
 - First release! 🎉
-
-## LogoScope 0.0.0.9000
-
-- Added a `CHANGELOG.md` file to track changes to the extension.
