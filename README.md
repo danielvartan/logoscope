@@ -24,7 +24,7 @@
 
 You can install the extension directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope) or by searching for `LogoScope` in the extensions panel.
 
-To mannually install the extension, download the latest `.vsix` file from the [releases page](https://github.com/sustentarea/logoscope/releases/latest) and install it by following these steps:
+To mannually install the extension, download the latest `.vsix` file from the [releases page](https://github.com/danielvartan/logoscope/releases/latest) and install it by following these steps:
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
