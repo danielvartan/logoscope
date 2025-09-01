@@ -1,0 +1,34 @@
+{
+  "name": "NetLogo XML",
+  "scopeName": "source.nlogox",
+  "patterns": [
+    {
+      "include": "#netlogo-code-block"
+    },
+    {
+      "include": "text.xml"
+    }
+  ],
+  "repository": {
+    "netlogo-code-block": {
+      "name": "meta.embedded.block.netlogo",
+      "begin": "(<code><!\\[CDATA\\[)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.xml"
+        }
+      },
+      "end": "(\\]\\]></code>|.*\\]\\]></code>)",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.xml"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.nlogo"
+        }
+      ]
+    }
+  }
+}

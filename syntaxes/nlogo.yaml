@@ -1,0 +1,126 @@
+# yaml > json: `npx js-yaml syntaxes/nlogo.yaml > syntaxes/nlogo.json`
+# json > yaml: `npx json2yaml syntaxes/nlogo.json > syntaxes/nlogo.yaml`
+# Test: `F5`
+
+name: NetLogo
+scopeName: source.nlogo
+
+variables:
+  var: (\b(?<!-)[a-zA-Z_][\w.\-]*(?!-)\b)
+
+patterns:
+- include: "#brackets"
+- include: "#builtin-functions"
+- include: "#comments"
+- include: "#constants"
+- include: "#functions"
+- include: "#keywords"
+- include: "#operators"
+- include: "#parens"
+- include: "#strings"
+
+repository:
+  brackets:
+    name: meta.brackets.netlogo
+    begin: \[
+    beginCaptures:
+      "0":
+        name: meta.brackets.netlogo
+    contentName: meta.brackets.netlogo
+    end: \]
+    endCaptures:
+      "0":
+        name: meta.brackets.netlogo
+    patterns:
+    - include: $self
+  builtin-functions:
+    patterns:
+    - name: support.function.builtin.netlogo
+      match: \b(?<!-)(__set-line-thickness|beep|clear-output|clear-all|ca|clear-all-plots|clear-drawing|cd|clear-globals|clear-links|clear-output|clear-patches|cp|clear-plot|clear-ticks|clear-turtles|ct|error|error-message|let|of|report|reset-perspective|rp|reset-ticks|resize-world|ride|ride-me|run|runresult|set-default-shape|set|set-current-plot|set-current-plot-pen|set-histogram-num-bars|set-patch-size|set-plot-background-color|set-plot-pen-color|set-plot-pen-interval|set-plot-pen-mode|set-plot-x-range|set-plot-y-rangeshow|setxy|setup-plots|show-turtle|st|startup|stop|stop-inspecting|stop-inspecting-dead-agents|subject|tick|wait|with)(?!-)\b
+  comments:
+    name: comment.line.semicolon.netlogo
+    begin: ;
+    beginCaptures:
+      "0":
+        name: punctuation.definition.comment.netlogo
+    end: $\n?
+  constants:
+    patterns:
+    - name: constant.numeric.integer.netlogo
+      match: \b\d+(\.)?\d*\b
+    - name: constant.numeric.float.decimal.netlogo
+      match: \b\d+\.\d+\b
+    - name: constant.language.netlogo
+      match: \b(?<!-)(false|true)\b|\b(e|pi)(?!-)\b
+    - name: constant.language.color.netlogo
+      match: \b(?<!-)(black|blue|brown|cyan|false|gray|grey|green|lime|magenta|orange|pink|red|sky|true|turquoise|violet|white|yellow)(?!-)\b
+  functions:
+    patterns:
+    - name: meta.class.netlogo
+      captures:
+        "1":
+          name: storage.type.class.netlogo
+        "2":
+          name: entity.name.type.class.netlogo
+      match: ^\s*(to|to-report)\s+(\w+[-\w]*)
+  keywords:
+    patterns:
+    - name: keyword.control.import.netlogo
+      match: ^\b(?<!-)(__includes|extensions)\b
+    - name: storage.modifier.global.netlogo
+      match: ^\s*(breed|globals|directed-link-breed|undirected-link-breed)\b|^\s*\w+\-own\b
+    - name: keyword.control.conditional.netlogo
+      match: \b(?<!-)(ifelse-value|ifelse|if)(?!-)\b
+    - name: keyword.control.loop.for.netlogo
+      match: \b(?<!-)foreach(?!-)\b
+    - name: keyword.control.loop.while.netlogo
+      match: \b(?<!-)while(?!-)\b
+    - name: keyword.control.repeat.netlogo
+      match: \b(?<!-)(loop|repeat|every)(?!-)\b
+    # - name: keyword.control.flow.return.netlogo
+    #   match: \b(?<!-)report(?!-)\b
+    - name: keyword.control.statement.netlogo
+      match: \bend\b # |\b(?<!-)(wait|stop)(?!-)\b
+    # - name: keyword.control.exception.netlogo
+    #   match: \b(?<!-)(error|error-message)(?!-)\b
+    - name: keyword.other.netlogo
+      match: \b(?<!-)(agentset|all|any|autoplot|autoplotx|autoploty|can-move|empty|hidden|hubnet-enter-message|hubnet-exit-message|hubnet-message-waiting|is-agent|is-agentset|is-anonymous-command|is-anonymous-reporter|is-list|is-number|is-patch|is-patch-set|is-string|is-turtle|is-turtle-set|member|mouse-down|mouse-inside|netlogo-web|plot-pen-exists|shade-of|user-yes-or-no)\?(?!-)\s
+    - name: keyword.other.netlogo
+      match: \b(?<!-)(abs|acos|approximate-hsb|approximate-rgb|ask|ask-concurrent|at-points|atan|auto-plot-off|auto-plot-on|auto-plot-x-off|auto-plot-x-on|auto-plot-y-off|auto-plot-y-on|back|bk|base-colors|behaviorspace-experiment-name|behaviorspace-run-number|both-ends|butfirst|but-first|but-last|carefully|ceiling|create-temporary-plot-pen|color|cos|count|cro|crt|current-plot|current-plot-pen|date-and-time|default-shape|die|diffuse|diffuse4|display|display-labels|distance|distancexy|downhill|downhill4|dx|dy|end1|end2|exp|export-all-plots|export-interface|export-output|export-plot|export-view|export-world|extract-hsb|extract-rgb|face|facexy|file-at-end?|file-close|file-close-all|file-delete|file-exists?|file-flush|file-open|file-print|file-read|file-read-characters|file-read-line|file-show|file-type|file-write|filter|first|floor|follow|follow-me|forward|fd|fput|hatch|heading|hide-link|histogram|ht|home-directory|home|hsb|hubnet-broadcast|hubnet-broadcast-clear-output|hubnet-broadcast-message|hubnet-clear-override|hubnet-clear-overrides|hubnet-clients-list|hubnet-fetch-message|hubnet-kick-all-clients|hubnet-kick-client|hubnet-message|hubnet-message-source|hubnet-message-tag|hubnet-reset|hubnet-reset-perspective|hubnet-send|hubnet-send-clear-output|hubnet-send-follow|hubnet-send-message|hubnet-send-override|hubnet-send-watch|import-drawing|import-pcolors|import-pcolors-rgb|import-world|in-cone|in-radius|inspect|int|item|jump|label|label-color|last|layout-circle|layout-radial|layout-spring|layout-tutte|left|ln|lt|length|link-heading|link-length|link-neighbor?|link-neighbors|link-set|link-shapes|link-with|list|log|lput|map|max-n-of|max-one-of|max-pxcor|max-pycor|max|mean|median|min-n-of|min-one-of|min-pxcor|min-pycor|min|mod|modes|mouse-xcor|mouse-ycor|move-to|myself|n-of|n-values|netlogo-version|new-seed|neighbors|neighbors4|no-display|no-links|no-patches|no-turtles|nobody|one-of|other|other-end|output-print|output-show|output-type|output-write|patch|patch-set|patch-size|patches|pcolor|pen-down|pd|pen-erase|pe|pen-mode|pen-size|pen-up|pu|plabel-color|plabel|plot-name|plot-pen-down|plot-pen-reset|plot-pen-up|plot-x-max|plot-x-min|plot-y-max|plot-y-min|plot|plotxy|position|precision|print|pxcor|pycor|random-exponential|random-float|random-gamma|random-normal|random-poisson|random-pxcor|random-pycor|random-seed|random-xcor|random-ycor|random|read-from-string|reduce|remainder|remove|remove-duplicates|remove-item|replace-item|reverse|rgb|ride|ride-me|right|rt|round|scale-color|sentence|shape|shapes|show-link|shuffle|sin|size|sort|sort-by|sort-on|sprout|sqrt|stamp-erase|stamp|standard-deviation|sublist|subtract-headings|sum|tan|thickness|ticks|tie|tie-mode|towards|towardsxy|turtle-set|turtle|turtles|untie|up-to-n-of|uphill|uphill4|update-plots|user-directory|user-file|user-input|user-message|user-new-file|user-one-of|variance|xcor|ycor|watch|watch-me|who|with-local-randomness|without-interruption|with-max|with-min|who-are-not|word|world-height|world-width|wrap-color)(?!-)\b
+    - name: keyword.other.netlogo
+      match: \b(?<!-)(?:(?:turtle(?:s)?(?:-own|-set|-here|-on|-at)?)|(?:patch(?:es)?(?:-own|-set|-here|-on|-at|-ahead|-at-heading-and-distance|-left-and-ahead|-right-and-ahead)?)|(?:link(?:s)?(?:-own|-set|-with|-neighbor\?|-neighbors|-at|-here|-on)?)|(?:create-(?:turtle(?:s)?|link(?:s)?|patch(?:es)?|\w+)(?:-to|-from|-with|-ordered)?)|(?:sprout(?:-\w+)?)|(?:hatch(?:-\w+)?)|(?:is-(?:turtle|patch|link|agent|agentset|patch-set|turtle-set|\w+)(?:\?)?)|(?:my(?:-links|-in-links|-out-links|-\w+|-in-\w+|-out-\w+)?)|(?:no-(?:turtles|patches|links)))(?!-)\b
+    - name: keyword.other.netlogo
+      match: \b(?<!-)(?:(?:turtle(?:s)?(?:-own|-set|-here|-on|-at)?)|(?:patch(?:es)?(?:-own|-set|-here|-on|-at|-ahead|-at-heading-and-distance|-left-and-ahead|-right-and-ahead)?)|(?:link(?:s)?(?:-own|-set|-with|-neighbor\?|-neighbors|-at|-here|-on)?)|(?:create-(?:turtle(?:s)?|link(?:s)?|patch(?:es)?|\w+)(?:-to|-from|-with|-ordered)?)|(?:sprout(?:-\w+)?)|(?:hatch(?:-\w+)?)|(?:is-(?:turtle|patch|link|agent|agentset|patch-set|turtle-set|\w+)(?:\?)?)|(?:my(?:-links|-in-links|-out-links|-\w+|-in-\w+|-out-\w+)?)|(?:no-(?:turtles|patches|links)))(?!-)\b
+    - name: keyword.other.netlogo
+      match: \b(?<!-)([a-zA-Z_][\w.\-]+):([a-zA-Z_][\w.\-]+)(?!\-)(?!-)\s
+  operators:
+    patterns:
+    - name: keyword.operator.arithmetic.netlogo
+      match: \s(\+|-|\*|/|\^)\s|\-(?=[\d|e|pi])
+    - name: keyword.operator.comparison.netlogo
+      match: \s(=|!=|>|>=|<|<=)\s
+    - name: keyword.operator.logical.netlogo
+      match: \s(and|or|xor)\s|\b(not)\s
+    - name: keyword.operator.assignment.netlogo
+      match: \s(->)\s
+  parens:
+    name: meta.parens.netlogo
+    begin: \(
+    beginCaptures:
+      "0":
+        name: meta.parens.netlogo
+    contentName: meta.parens.netlogo
+    end: \)
+    endCaptures:
+      "0":
+        name: meta.parens.netlogo
+    patterns:
+    - include: "#end_in_parens"
+    - include: $self
+  strings:
+    name: string.quoted.double.netlogo
+    begin: '"'
+    end: '"'
+    patterns:
+    - name: constant.character.escape.netlogo
+      match: \\.
