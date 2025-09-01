@@ -14,6 +14,13 @@
 # npm run test:grammar
 # code --install-extension logoscope-0.1.0.vsix
 
+# # Git
+
+# git tag
+# git tag v#.#.#
+# git tag -d v#.#.#
+# git push --tags
+
 # # TextMate
 
 # yaml > json: `npx js-yaml syntaxes/nlogo.yaml > syntaxes/nlogo.json`
@@ -24,8 +31,8 @@
 
 # # Visual Studio Code
 
-# vsce login danielvartan
 # vsce package
+# vsce login danielvartan
 # vsce publish
 
 # # Open VSX Registry
@@ -34,10 +41,3 @@
 # npx ovsx publish logoscope-#.#.#.vsix -p <token>
 # npx ovsx publish -p <token>
 # npm version patch
-
-# # Git
-
-# git tag
-# git tag v#.#.#
-# git tag -d v#.#.#
-# git push --tags

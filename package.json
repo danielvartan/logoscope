@@ -2,7 +2,7 @@
 	"name": "logoscope",
 	"displayName": "LogoScope",
 	"description": "NetLogo Syntax Highlighting",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"publisher": "danielvartan",
 	"repository": {
 		"type": "git",
