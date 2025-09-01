@@ -18,7 +18,7 @@
 
 ![NetLogo Syntax Highlighting](images/code.png)
 
-<sub>Theme: [Catppuccin](https://catppuccin.com/) Frappé.</sub>
+<sub>Theme: [Catppuccin](https://catppuccin.com/) Latte.</sub>
 
 ## Installation
 
