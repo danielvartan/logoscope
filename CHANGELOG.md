@@ -1,3 +1,7 @@
+## v0.1.2 (2025-09-01)
+
+- Added internal changes. No changes to functionality.
+
 ## v0.1.1 (2025-09-01)
 
 - Added more keywords to the syntax highlighting based on the [NetLogo Dictionary](https://docs.netlogo.org/dictionary.html).
