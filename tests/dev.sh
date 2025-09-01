@@ -39,6 +39,5 @@
 
 # git tag
 # git tag v#.#.#
-# git push --tags
 # git tag -d v#.#.#
-# git push origin --delete v#.#.#
+# git push --tags
