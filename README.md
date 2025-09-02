@@ -84,6 +84,7 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 - [NetLogo Dictionary](https://docs.netlogo.org/dictionary.html)
 - [NetLogo Programming Guide](https://docs.netlogo.org/7.0.0-beta2/programming.html)
 - [TextMate Grammars](https://macromates.com/manual/en/language_grammars)
+- [VSCode Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest)
 - [VSCode Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 - [VSCode Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
 - [Positron Extension Template](https://github.com/posit-dev/positron-extension-template)
