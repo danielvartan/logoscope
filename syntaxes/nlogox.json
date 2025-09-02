@@ -1,32 +1,87 @@
 {
-  "name": "NetLogo XML",
+  "name": "NetLogo XML Model",
   "scopeName": "source.nlogox",
   "patterns": [
     {
-      "include": "#netlogo-code-block"
+      "include": "#code-block"
+    },
+    {
+      "include": "#markdown-block"
     },
     {
       "include": "text.xml"
     }
   ],
   "repository": {
-    "netlogo-code-block": {
-      "name": "meta.embedded.block.netlogo",
-      "begin": "(<code><!\\[CDATA\\[)",
+    "code-block": {
+      "name": "source.netlogo.code",
+      "begin": "(<code><!\\[CDATA\\[)(.*)",
       "beginCaptures": {
         "1": {
           "name": "punctuation.definition.tag.xml"
+        },
+        "2": {
+          "name": "source.netlogo.code.begin",
+          "patterns": [
+            {
+              "include": "source.netlogo"
+            }
+          ]
         }
       },
-      "end": "(\\]\\]></code>|.*\\]\\]></code>)",
+      "end": "(.*)(\\]\\]></code>)",
       "endCaptures": {
         "1": {
+          "name": "source.netlogo.code.end",
+          "patterns": [
+            {
+              "include": "source.netlogo"
+            }
+          ]
+        },
+        "2": {
           "name": "punctuation.definition.tag.xml"
         }
       },
       "patterns": [
         {
-          "include": "source.nlogo"
+          "include": "source.netlogo"
+        }
+      ]
+    },
+    "markdown-block": {
+      "name": "text.html.markdown",
+      "begin": "(<info><!\\[CDATA\\[)(.*)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.xml"
+        },
+        "2": {
+          "name": "text.html.markdown.begin",
+          "patterns": [
+            {
+              "include": "text.html.markdown"
+            }
+          ]
+        }
+      },
+      "end": "(.*)(\\]\\]></info>)",
+      "endCaptures": {
+        "1": {
+          "name": "text.html.markdown.end",
+          "patterns": [
+            {
+              "include": "text.html.markdown"
+            }
+          ]
+        },
+        "2": {
+          "name": "punctuation.definition.tag.xml"
+        }
+      },
+      "patterns": [
+        {
+          "include": "text.html.markdown"
         }
       ]
     }
