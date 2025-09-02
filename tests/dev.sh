@@ -1,9 +1,18 @@
 # # For Development Use Only (Comment the Code After Use)
 
+# # Publishing
+
+# npm run render-json
+# npm run pretest
+# npm install
+# vsce package
+# git tag v#.#.#
+# git push --tags
+
 # # Scripts
 
-# npm install
-
+# npm run render-json
+# npm run js-yaml-netlogo
 # npm run js-yaml-nlogo
 # npm run js-yaml-nlogox
 # npm run vscode:prepublish

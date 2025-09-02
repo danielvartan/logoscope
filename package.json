@@ -1,6 +1,6 @@
 {
 	"name": "logoscope",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"publisher": "danielvartan",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"displayName": "LogoScope",
@@ -102,8 +102,8 @@
 		"compile": "tsc -p ./",
 		"lint": "eslint",
 		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
 		"test:grammar": "vscode-tmgrammar-test tests/*.nlogo",
+		"pretest": "npm run compile && npm run lint && npm run test:grammar",
 		"js-yaml-netlogo": "npx js-yaml syntaxes/netlogo.yaml > syntaxes/netlogo.json",
 		"js-yaml-nlogo": "npx js-yaml syntaxes/nlogo.yaml > syntaxes/nlogo.json",
 		"js-yaml-nlogox": "npx js-yaml syntaxes/nlogox.yaml > syntaxes/nlogox.json",

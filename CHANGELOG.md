@@ -1,4 +1,10 @@
-## v0.1.3.9000 (development version)
+## v0.1.4.9000 (development version)
+
+## v0.1.4 (2025-09-02)
+
+- Added new metadata to `package.json`.
+- Added markdown block to support syntax highlighting for the info tab content (#1).
+- Fixed bleeding issues with scopes (#2).
 
 ## v0.1.3 (2025-09-01)
 
