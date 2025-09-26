@@ -7,7 +7,7 @@
 [![Visual Studio Marketplace: Version](https://img.shields.io/visual-studio-marketplace/v/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Open VSX Registry: Version](https://img.shields.io/open-vsx/v/danielvartan/logoscope)](https://open-vsx.org/extension/danielvartan/logoscope)
 [![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
-[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.png)](CODE_OF_CONDUCT.md)
+[![](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/)
 <!-- badges: end -->
 
 ## Overview
@@ -35,7 +35,7 @@ To manually install the extension, download the latest `.vsix` file from the [re
 
 ## How to Contribute
 
-[![](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.png)](CODE_OF_CONDUCT.md)
+[![](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/)
 
 Contributions are welcome! Whether you want to report bugs, suggest features, or improve the code or documentation, your input is highly valued. Please check the [issues tab](https://github.com/danielvartan/logoscope/issues) for existing issues or to open a new one.
 
