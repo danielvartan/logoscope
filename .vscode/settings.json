@@ -1,11 +1,13 @@
 {
   "cSpell.words": [
     "agentset",
+    "akash",
     "autoplotx",
     "autoploty",
     "behaviorspace",
     "boundedly",
     "butfirst",
+    "Catppuccin",
     "Chellapilla",
     "danielvartan",
     "distancexy",
@@ -44,5 +46,25 @@
     "xcor",
     "ycor"
   ],
-  "cSpell.blockCheckingWhenTextChunkSizeGreaterThan": 5000
+  "cSpell.blockCheckingWhenTextChunkSizeGreaterThan": 5000,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#f60000",
+    "activityBar.background": "#f60000",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#00df00",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#f60000",
+    "statusBar.background": "#c30000",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#f60000",
+    "statusBarItem.remoteBackground": "#c30000",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#c30000",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#c3000099",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#c30000"
 }

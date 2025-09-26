@@ -1,4 +1,8 @@
-## v0.1.4.9000 (development version)
+## v0.1.5.9000 (development version)
+
+## v0.1.5 (2025-09-26)
+
+- Fix `set-plot-y-range` syntax highlighting.
 
 ## v0.1.4 (2025-09-02)
 
