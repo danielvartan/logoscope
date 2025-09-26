@@ -38,7 +38,7 @@ repository:
   builtin-functions:
     patterns:
     - name: support.function.builtin.netlogo
-      match: (?:(?<=^)|(?<=[\s\(\[]))(__set-line-thickness|beep|clear-output|clear-all|ca|clear-all-plots|clear-drawing|cd|clear-globals|clear-links|clear-output|clear-patches|cp|clear-plot|clear-ticks|clear-turtles|ct|error|error-message|let|of|report|reset-perspective|rp|reset-ticks|resize-world|ride|ride-me|run|runresult|set-default-shape|set|set-current-plot|set-current-plot-pen|set-histogram-num-bars|set-patch-size|set-plot-background-color|set-plot-pen-color|set-plot-pen-interval|set-plot-pen-mode|set-plot-x-range|set-plot-y-rangeshow|setxy|setup-plots|startup|stop|stop-inspecting|stop-inspecting-dead-agents|tick|wait|with)(?=$|[\s\)\]])
+      match: (?:(?<=^)|(?<=[\s\(\[]))(__set-line-thickness|beep|clear-output|clear-all|ca|clear-all-plots|clear-drawing|cd|clear-globals|clear-links|clear-output|clear-patches|cp|clear-plot|clear-ticks|clear-turtles|ct|error|error-message|let|of|report|reset-perspective|rp|reset-ticks|resize-world|ride|ride-me|run|runresult|set-default-shape|set|set-current-plot|set-current-plot-pen|set-histogram-num-bars|set-patch-size|set-plot-background-color|set-plot-pen-color|set-plot-pen-interval|set-plot-pen-mode|set-plot-x-range|set-plot-y-range|show|setxy|setup-plots|startup|stop|stop-inspecting|stop-inspecting-dead-agents|tick|wait|with)(?=$|[\s\)\]])
   comments:
     name: comment.line.semicolon.netlogo
     begin: ;
