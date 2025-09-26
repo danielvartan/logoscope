@@ -2,7 +2,7 @@
 
 ## v0.1.5 (2025-09-26)
 
-- Fix `set-plot-y-range` syntax highlighting.
+- Fixed `set-plot-y-range` highlighting.
 
 ## v0.1.4 (2025-09-02)
 
