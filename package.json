@@ -6,30 +6,32 @@
 	"displayName": "LogoScope",
 	"description": "NetLogo Syntax Highlighting",
 	"icon": "images/icon.png",
-  "author": {
-    "name": "Daniel Vartanian"
-  },
+	"author": {
+		"name": "Daniel Vartanian",
+		"email": "danielvartan@proton.me",
+		"url": "https://danielvartan.com"
+	},
 	"categories": [
 		"Formatters",
 		"Programming Languages"
 	],
 	"keywords": [
-    "NetLogo",
+		"NetLogo",
 		"NetLogo Language",
 		"NetLogo Syntax",
-    "NetLogo Source File",
-    "NetLogo Model",
-    "NetLogo XML Model",
+		"NetLogo Source File",
+		"NetLogo Model",
+		"NetLogo XML Model",
 		"Logo",
 		"Logo Language",
 		"Logo Syntax",
 		"Syntax Highlighting",
-    "Code Highlighting",
+		"Code Highlighting",
 		"Programming Language Support",
 		"Modeling",
 		"Computational Modeling",
 		"Ecological Modeling",
-    "Agent-Based Modeling",
+		"Agent-Based Modeling",
 		"Individual-Based Modeling",
 		"Multi-Agent Systems",
 		"System Dynamics",
@@ -39,16 +41,16 @@
 		"Scientific Computing",
 		"Computational Science",
 		"Education"
-  ],
+	],
 	"homepage": "https://github.com/danielvartan/logoscope",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/danielvartan/logoscope"
 	},
 	"bugs": {
-    "url": "https://github.com/danielvartan/logoscope/issues",
-    "email": "bugs@danielvartan.com"
-  },
+		"url": "https://github.com/danielvartan/logoscope/issues",
+		"email": "danielvartan@proton.me"
+	},
 	"sponsor": {
 		"url": "https://github.com/sponsors/danielvartan"
 	},
@@ -62,20 +64,37 @@
 		"languages": [
 			{
 				"id": "netlogo",
-				"aliases": ["NetLogo", "Netlogo", "netLogo", "netlogo"],
-				"extensions": [".nls"],
+				"aliases": [
+					"NetLogo",
+					"Netlogo",
+					"netLogo",
+					"netlogo"
+				],
+				"extensions": [
+					".nls"
+				],
 				"configuration": "language-configuration.json"
 			},
 			{
 				"id": "nlogo",
-				"aliases": ["NetLogo Model"],
-				"extensions": [".nlogo", ".nlogo3d"],
+				"aliases": [
+					"NetLogo Model"
+				],
+				"extensions": [
+					".nlogo",
+					".nlogo3d"
+				],
 				"configuration": "language-configuration.json"
 			},
 			{
 				"id": "nlogox",
-				"aliases": ["NetLogo XML Model"],
-				"extensions": [".nlogox", ".nlogox3d"],
+				"aliases": [
+					"NetLogo XML Model"
+				],
+				"extensions": [
+					".nlogox",
+					".nlogox3d"
+				],
 				"configuration": "language-configuration.json"
 			}
 		],
@@ -107,7 +126,8 @@
 		"js-yaml-netlogo": "npx js-yaml syntaxes/netlogo.yaml > syntaxes/netlogo.json",
 		"js-yaml-nlogo": "npx js-yaml syntaxes/nlogo.yaml > syntaxes/nlogo.json",
 		"js-yaml-nlogox": "npx js-yaml syntaxes/nlogox.yaml > syntaxes/nlogox.json",
-		"render-json": "npm run js-yaml-netlogo && npm run js-yaml-nlogo && npm run js-yaml-nlogox"
+		"render-json": "npm run js-yaml-netlogo && npm run js-yaml-nlogo && npm run js-yaml-nlogox",
+		"render-cff": "node --no-warnings js/render-cff.js"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.13.0",
@@ -121,6 +141,8 @@
 		"vscode-tmgrammar-test": "^0.1.3"
 	},
 	"dependencies": {
-		"@posit-dev/positron": "^0.1.3"
+		"@posit-dev/positron": "^0.1.3",
+		"fs": "^0.0.1-security",
+		"path": "^0.12.7"
 	}
 }

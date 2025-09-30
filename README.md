@@ -7,7 +7,9 @@
 [![Visual Studio Marketplace: Version](https://img.shields.io/visual-studio-marketplace/v/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Open VSX Registry: Version](https://img.shields.io/open-vsx/v/danielvartan/logoscope)](https://open-vsx.org/extension/danielvartan/logoscope)
 [![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
-[![](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/)
+[![FAIR checklist badge](https://img.shields.io/badge/fairsoftwarechecklist.net--00a7d9.png)](https://fairsoftwarechecklist.net/v0.2?f=31&a=30112&i=02322&r=123)
+[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green.png)](https://fair-software.eu)
+[![Contributor Covenant 3.0 Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
 <!-- badges: end -->
 
 ## Overview
@@ -33,9 +35,9 @@ To manually install the extension, download the latest `.vsix` file from the [re
 5. Navigate to the location where you downloaded the `.vsix` file, select it, and click *Open*.
 6. Follow any prompts to complete the installation.
 
-## How to Contribute
+## Contributing
 
-[![](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/)
+[![](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
 
 Contributions are welcome! Whether you want to report bugs, suggest features, or improve the code or documentation, your input is highly valued. Please check the [issues tab](https://github.com/danielvartan/logoscope/issues) for existing issues or to open a new one.
 

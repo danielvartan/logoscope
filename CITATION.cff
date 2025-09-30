@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: 'To cite package "LogoScope" in publications use:'
+type: software
+license: GPL-3.0-or-later
+title: 'LogoScope: NetLogo syntax highlighting for Visual Studio Code'
+version: 0.1.5
+identifiers:
+  - type: url
+    value: https://github.com/danielvartan/logoscope
+authors:
+  - family-names: Vartanian
+    given-names: Daniel
+    email: danielvartan@proton.me
+    orcid: https://orcid.org/0000-0001-7782-759X
+preferred-citation:
+  type: software
+  title: 'LogoScope: NetLogo syntax highlighting for Visual Studio Code'
+  authors:
+    - family-names: Vartanian
+      given-names: Daniel
+      email: danielvartan@proton.me
+      orcid: https://orcid.org/0000-0001-7782-759X
+  year: 2025
+  url: https://github.com/danielvartan/logoscope
+  notes: Visual Studio Code extension
+contact:
+  - family-names: Vartanian
+    given-names: Daniel
+    email: danielvartan@proton.me
+    orcid: https://orcid.org/0000-0001-7782-759X
+repository-code: https://github.com/danielvartan/logoscope
+url: https://github.com/danielvartan/logoscope

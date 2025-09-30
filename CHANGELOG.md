@@ -1,6 +1,8 @@
 ## v0.1.5.9000 (development version)
 
 - Updated the Code of Conduct to [Contributor Covenant 3.0](https://www.contributor-covenant.org/version/3/0/code_of_conduct/).
+- Adjusted extension to the FAIR principles.
+- Updated dependencies.
 
 ## v0.1.5 (2025-09-26)
 

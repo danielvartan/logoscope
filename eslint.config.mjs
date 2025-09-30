@@ -1,6 +1,6 @@
 /**
  * ESLint configuration for the project.
- * 
+ *
  * See https://eslint.style and https://typescript-eslint.io for additional linting options.
  */
 // @ts-check
@@ -33,6 +33,7 @@ export default tseslint.config(
 					'format': ['camelCase', 'PascalCase']
 				}
 			],
+			'@typescript-eslint/no-require-imports': 'off',
 			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{

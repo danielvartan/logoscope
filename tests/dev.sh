@@ -3,15 +3,21 @@
 # # Publishing
 
 # npm run render-json
+# npm run render-cff
 # npm run pretest
 # npm install
 # vsce package
 # git tag v#.#.#
 # git push --tags
 
+# # CFF Validation
+
+# cffr::cff_validate(here::here("CITATION.cff"))
+
 # # Scripts
 
 # npm run render-json
+# npm run render-cff
 # npm run js-yaml-netlogo
 # npm run js-yaml-nlogo
 # npm run js-yaml-nlogox
