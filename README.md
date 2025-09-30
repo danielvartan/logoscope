@@ -68,7 +68,7 @@ See the *Useful Resources* section below for more information on developing VS C
 ```text
 Copyright (C) 2025 Daniel Vartanian
 
-{LogoScope} is free software: you can redistribute it and/or modify it under
+LogoScope is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
 version.
