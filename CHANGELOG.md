@@ -1,5 +1,7 @@
 ## v0.1.6.9000 (development version)
 
+- A [Zenodo](https://zenodo.org) DOI has been created for this extension.
+
 ## v0.1.6 (2026-01-03)
 
 - Numbers or constants preceded by a character and `-` (e.g., quartile-1) are now highlighted correctly (#9).

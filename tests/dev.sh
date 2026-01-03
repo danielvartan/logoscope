@@ -4,8 +4,9 @@
 
 # # Publishing
 
+# Fix CITATION.cff first!
+
 # npm run render-json
-# npm run render-cff
 # npm run pretest
 # npm update
 # npm outdated

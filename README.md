@@ -2,10 +2,11 @@
 
 <!-- badges: start -->
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-4cc61e.png)](https://www.repostatus.org/#active)
-[![GitHub Workflow Status (With Event)](https://img.shields.io/github/actions/workflow/status/davidlday/vscode-languagetool-linter/nodejs-ci.yml)](https://github.com/danielvartan/logoscope/actions/workflows/build.yml)
 [![Visual Studio Marketplace: Installs](https://img.shields.io/visual-studio-marketplace/i/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Visual Studio Marketplace: Version](https://img.shields.io/visual-studio-marketplace/v/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Open VSX Registry: Version](https://img.shields.io/open-vsx/v/danielvartan/logoscope)](https://open-vsx.org/extension/danielvartan/logoscope)
+[![DOI Badge](https://img.shields.io/badge/doi-10.5281/zenodo.18137674-1284C5.png)](https://doi.org/10.5281/zenodo.18137674)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/davidlday/vscode-languagetool-linter/nodejs-ci.yml)](https://github.com/danielvartan/logoscope/actions/workflows/build.yml)
 [![GPLv3 License Badge](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 [![FAIR checklist badge](https://img.shields.io/badge/fairsoftwarechecklist.net--00a7d9.png)](https://fairsoftwarechecklist.net/v0.2?f=31&a=30112&i=02322&r=123)
 [![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green.png)](https://fair-software.eu)

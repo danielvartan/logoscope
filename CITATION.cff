@@ -1,17 +1,45 @@
 cff-version: 1.2.0
-message: 'To cite package "LogoScope" in publications use:'
+title: "LogoScope: NetLogo syntax highlighting for Visual Studio Code"
+message: >-
+  If you use this software, please cite it using the metadata from this file.
 type: software
-license: GPL-3.0-or-later
-title: 'LogoScope: NetLogo syntax highlighting for Visual Studio Code'
-version: 0.1.6
-identifiers:
-  - type: url
-    value: https://github.com/danielvartan/logoscope
 authors:
-  - family-names: Vartanian
-    given-names: Daniel
+  - given-names: Daniel
+    family-names: Vartanian
     email: danielvartan@proton.me
-    orcid: https://orcid.org/0000-0001-7782-759X
+    affiliation: University of São Paulo
+    orcid: "https://orcid.org/0000-0001-7782-759X"
+abstract: >-
+  LogoScope is a Visual Studio Code extension that provides syntax highlighting
+  for the NetLogo programming language. It supports all NetLogo file extensions
+  (.nlogo, .nlogo3d, .nls, .nlogox, .nlogox3d) and builds on akash raj's NetLogo
+  Syntax Highlighting extension, last updated in 2020.
+keywords:
+  - Agent-Based Modeling
+  - Code Highlighting
+  - Complex Systems
+  - Complexity Science
+  - Computational Modeling
+  - Computational Science
+  - Ecological Modeling
+  - Education
+  - Generative Science
+  - Individual-Based Modeling
+  - Logo Language
+  - Logo Syntax
+  - Logo
+  - Modeling
+  - Multi-Agent Systems
+  - NetLogo Language
+  - NetLogo Model
+  - NetLogo Source File
+  - NetLogo Syntax
+  - NetLogo XML Model
+  - NetLogo
+  - Programming Language Support
+  - Scientific Computing
+  - Syntax Highlighting
+  - System Dynamics
 preferred-citation:
   type: software
   title: 'LogoScope: NetLogo syntax highlighting for Visual Studio Code'
@@ -20,13 +48,13 @@ preferred-citation:
       given-names: Daniel
       email: danielvartan@proton.me
       orcid: https://orcid.org/0000-0001-7782-759X
-  year: 2026
-  url: https://github.com/danielvartan/logoscope
-  notes: Visual Studio Code extension
-contact:
-  - family-names: Vartanian
-    given-names: Daniel
-    email: danielvartan@proton.me
-    orcid: https://orcid.org/0000-0001-7782-759X
+  doi: 10.5281/zenodo.18137674
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18137674
+    description: Zenodo Record
+  - type: url
+    value: https://github.com/danielvartan/logoscope
 repository-code: https://github.com/danielvartan/logoscope
-url: https://github.com/danielvartan/logoscope
+license: GPL-3.0-or-later
+version: 0.1.6.9000
