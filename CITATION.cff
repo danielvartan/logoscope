@@ -42,7 +42,7 @@ keywords:
   - System Dynamics
 preferred-citation:
   type: software
-  title: 'LogoScope: NetLogo syntax highlighting for Visual Studio Code'
+  title: "LogoScope: NetLogo syntax highlighting for Visual Studio Code"
   authors:
     - family-names: Vartanian
       given-names: Daniel
@@ -55,6 +55,7 @@ identifiers:
     description: Zenodo Record
   - type: url
     value: https://github.com/danielvartan/logoscope
+    description: GitHub Code Repository
 repository-code: https://github.com/danielvartan/logoscope
 license: GPL-3.0-or-later
 version: 0.1.6.9000
