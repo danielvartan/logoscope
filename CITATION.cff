@@ -3,7 +3,7 @@ message: 'To cite package "LogoScope" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'LogoScope: NetLogo syntax highlighting for Visual Studio Code'
-version: 0.1.5
+version: 0.1.6
 identifiers:
   - type: url
     value: https://github.com/danielvartan/logoscope
@@ -20,7 +20,7 @@ preferred-citation:
       given-names: Daniel
       email: danielvartan@proton.me
       orcid: https://orcid.org/0000-0001-7782-759X
-  year: 2025
+  year: 2026
   url: https://github.com/danielvartan/logoscope
   notes: Visual Studio Code extension
 contact:

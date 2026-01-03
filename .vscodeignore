@@ -6,8 +6,10 @@
 CITATION.cff
 eslint.config.mjs
 images/icon.svg
+images/logo.png
+images/logo.svg
 js/**
-nlogo/**
+models/**
 node_modules/**
 scripts/**
 syntaxes/*.yaml

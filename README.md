@@ -6,7 +6,7 @@
 [![Visual Studio Marketplace: Installs](https://img.shields.io/visual-studio-marketplace/i/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Visual Studio Marketplace: Version](https://img.shields.io/visual-studio-marketplace/v/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Open VSX Registry: Version](https://img.shields.io/open-vsx/v/danielvartan/logoscope)](https://open-vsx.org/extension/danielvartan/logoscope)
-[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
+[![GPLv3 License Badge](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 [![FAIR checklist badge](https://img.shields.io/badge/fairsoftwarechecklist.net--00a7d9.png)](https://fairsoftwarechecklist.net/v0.2?f=31&a=30112&i=02322&r=123)
 [![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green.png)](https://fair-software.eu)
 [![Contributor Covenant 3.0 Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
@@ -14,9 +14,11 @@
 
 ## Overview
 
-`LogoScope` is a Visual Studio Code extension that provides syntax highlighting for the [NetLogo](https://www.netlogo.org/) programming language, covering all NetLogo file extensions (`.nlogo`, `.nlogo3d`, `.nls`, `.nlogox`, `.nlogox3d`). It builds on [akash raj](https://github.com/akashrajkn)'s [NetLogo Syntax Highlighting](https://github.com/akashrajkn/language-netlogo-code) extension that was last updated in 2020.
+`LogoScope` is a Visual Studio Code extension that provides syntax highlighting for the [NetLogo](https://www.netlogo.org/) programming language. It supports all NetLogo file extensions (`.nlogo`, `.nlogo3d`, `.nls`, `.nlogox`, `.nlogox3d`) and builds on [akash raj](https://github.com/akashrajkn)'s [NetLogo Syntax Highlighting](https://github.com/akashrajkn/language-netlogo-code) extension, last updated in 2020.
 
 > If you find this project useful, please consider giving it a star! [![GitHub repo stars](https://img.shields.io/github/stars/danielvartan/logoscope)](https://github.com/danielvartan/logoscope/)
+
+> The continuous development of `LogoScope` depends on community support. If you find this project useful, and can afford to do so, please consider becoming a sponsor. &nbsp; [![GitHub Sponsors Badge](https://img.shields.io/badge/Sponsor-%E2%9D%A4-%23ea857e?logo=github&logoColor=white.png)](https://github.com/sponsors/danielvartan)
 
 ![NetLogo Syntax Highlighting](images/code.png)
 
@@ -24,28 +26,38 @@
 
 ## Installation
 
-You can install the extension directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope) or by searching for `LogoScope` in the extensions panel.
+You can install the extension directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope) or by searching for `LogoScope` in the Extensions panel.
 
-To manually install the extension, download the latest `.vsix` file from the [releases page](https://github.com/danielvartan/logoscope/releases/latest) and install it by following these steps:
+To manually install the extension, download the latest `.vsix` file from the code repository [releases page](https://github.com/danielvartan/logoscope/releases/latest) and follow these steps:
 
 1. Open Visual Studio Code.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
-3. Click on the three-dot menu in the top-right corner of the Extensions view.
-4. Select *Install from VSIX...* from the dropdown menu.
-5. Navigate to the location where you downloaded the `.vsix` file, select it, and click *Open*.
-6. Follow any prompts to complete the installation.
+2. Open the Extensions view (`Ctrl+Shift+X` on Windows/Linux, `Cmd+Shift+X` on macOS).
+3. Click the three-dot menu (`...`) in the top-right corner.
+4. Select **Install from VSIX...**.
+5. Navigate to the downloaded `.vsix` file and click **Open**.
 
 ## Contributing
 
-[![](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
+[![Contributor Covenant 3.0 Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
 
-Contributions are welcome! Whether you want to report bugs, suggest features, or improve the code or documentation, your input is highly valued. Please check the [issues tab](https://github.com/danielvartan/logoscope/issues) for existing issues or to open a new one.
+Contributions are always welcome! Whether you want to report bugs, suggest new features, or help improve the code or documentation, your input makes a difference.
 
-The syntax highlighting is designed to closely match NetLogo's original highlighting. You can use the test files in the `nlogo` folder to evaluate the highlighting accuracy. If you notice any discrepancies or have suggestions for improvement, please don't hesitate to open an issue or submit a pull request.
+Before opening a new issue, please check the [issues tab](https://github.com/danielvartan/logoscope/issues) to see if your topic has already been reported.
+
+[![GitHub Sponsors Badge](https://img.shields.io/badge/Sponsor-%E2%9D%A4-%23ea857e?logo=github&logoColor=white.png)](https://github.com/sponsors/danielvartan)
+
+
+You can also support the development of `LogoScope` by becoming a
+sponsor.
+
+Click [here](https://github.com/sponsors/danielvartan) to make a
+donation. Please mention `LogoScope` in your donation message.
 
 ### Getting Started
 
-1. Clone this repository to yor local machine:
+To set up the development environment for `LogoScope`, follow these steps:
+
+1. Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/danielvartan/logoscope
@@ -59,11 +71,13 @@ npm install
 
 3. Run the extension in development mode by pressing `F5`.
 
-See the *Useful Resources* section below for more information on developing VS Code extensions.
+The syntax highlighting is designed to closely match NetLogo's original highlighting. You can use the test files in the `models` folder to evaluate highlighting accuracy.
+
+See the [Useful Resources](#useful-resources) section for more information on developing VS Code extensions.
 
 ## License
 
-[![](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
+[![GNU GPLv3 License](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 
 ```text
 Copyright (C) 2025 Daniel Vartanian
@@ -98,3 +112,5 @@ this program. If not, see <https://www.gnu.org/licenses/>.
 This extension is based on the work of [akash raj](https://github.com/akashrajkn)'s [NetLogo Syntax Highlighting](https://github.com/akashrajkn/language-netlogo-code) extension, last updated in 2020.
 
 `LogoScope` is an independent project with no affiliation to [NetLogo](https://www.netlogo.org/) or its developers.
+
+`LogoScope` brand identity is based on the [NetLogo 7](https://www.netlogo.org/) brand identity.

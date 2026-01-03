@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 # # For Development Use Only (Comment the Code After Use)
 
 # # Publishing
@@ -5,6 +7,8 @@
 # npm run render-json
 # npm run render-cff
 # npm run pretest
+# npm update
+# npm outdated
 # npm install
 # vsce package
 # git tag v#.#.#
