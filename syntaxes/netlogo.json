@@ -77,11 +77,11 @@
       "patterns": [
         {
           "name": "constant.numeric.float.decimal.netlogo",
-          "match": "\\b\\d+\\.\\d+\\b"
+          "match": "(?:(?<![a-zA-Z]-)|(?<=^)|(?<=[\\s\\(\\[]))\\d+\\.\\d*(?=$|[\\s\\)\\]])"
         },
         {
           "name": "constant.numeric.integer.netlogo",
-          "match": "\\b\\d+\\b"
+          "match": "(?:(?<![a-zA-Z]-)|(?<=^)|(?<=[\\s\\(\\[]))\\d+(?=$|[\\s\\)\\]])"
         },
         {
           "name": "constant.language.netlogo",
@@ -89,7 +89,7 @@
         },
         {
           "name": "constant.language.netlogo",
-          "match": "(?:(?<=^)|(?<=[\\s\\(\\[\\-]))(e|pi)(?=$|[\\s\\)\\]])"
+          "match": "(?:(?<![a-zA-Z]-)|(?<=^)|(?<=[\\s\\(\\[]))(e|pi)(?=$|[\\s\\)\\]])"
         },
         {
           "name": "constant.language.color.netlogo",
@@ -177,7 +177,7 @@
         },
         {
           "name": "keyword.operator.arithmetic.netlogo",
-          "match": "\\-(?=[\\d|e|pi])"
+          "match": "(?<![a-zA-Z])\\-(?=[\\d|e|pi])"
         },
         {
           "name": "keyword.operator.comparison.netlogo",
