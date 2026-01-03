@@ -1,24 +1,33 @@
-name: build.yaml
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
+name: build.yaml
+permissions: read-all
+
 jobs:
   ubuntu-build:
+    name: Build extension on Ubuntu
     runs-on: ubuntu-latest
-    name: Build on Ubuntu
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@v4
-      - name: Setup Node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-      - run: npm ci
-      - name: Run TypeScript Compiler
+
+      - name: Install Node.js dependencies
+        run: npm ci
+        shell: bash
+
+      - name: Run TypeScript compiler
         run: npm run compile
+        shell: bash
+
       - name: Run ESLint
         run: npm run lint
+        shell: bash

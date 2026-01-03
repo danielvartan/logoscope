@@ -1,24 +1,32 @@
-name: test-grammar.yaml
-
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   pull_request:
-    branches: [main]
+    branches: [main, master]
+
+name: test-grammar.yaml
+permissions: read-all
 
 jobs:
-  test:
-    name: Run npm tests
+  test-grammar:
+    name: Run grammar tests
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@v4
-      - name: Setup Node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - name: Install dependencies
+
+      - name: Install Node.js dependencies
         run: npm ci
+        shell: bash
+
       - name: Run grammar tests
         run: npm run test:grammar
+        shell: bash

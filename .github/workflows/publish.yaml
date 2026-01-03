@@ -1,35 +1,45 @@
-name: publish.yaml
-
 on:
   push:
     tags:
       - "*"
 
+name: publish.yaml
+permissions: read-all
+
 jobs:
   deploy:
+    name: Publish extension
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@v4
-      - name: Setup Node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install dependencies
+
+      - name: Install Node.js dependencies
         run: npm ci
-      - name: Publish to Open VSX Registry
+
+      - name: Publish on Open VSX Registry
+        id: publish-on-open-vsx
         uses: HaaLeo/publish-vscode-extension@v2
         with:
-          pat: ${{ secrets.OPEN_VSX_TOKEN }}
-      - name: Publish to Visual Studio Marketplace
+          pat: ${{secrets.OPEN_VSX_TOKEN}}
+
+      - name: Publish on Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v2
         with:
-          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          pat: ${{secrets.VS_MARKETPLACE_TOKEN}}
           registryUrl: https://marketplace.visualstudio.com
-          extensionFile: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
+          extensionFile: ${{steps.publish-on-open-vsx.outputs.vsixPath}}
+
       - name: Publish on GitHub
         uses: softprops/action-gh-release@v2
         with:
-          files: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
+          files: ${{steps.publish-on-open-vsx.outputs.vsixPath}}
