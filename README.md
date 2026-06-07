@@ -7,15 +7,15 @@
 [![Open VSX Registry: Version](https://img.shields.io/open-vsx/v/danielvartan/logoscope)](https://open-vsx.org/extension/danielvartan/logoscope)
 [![DOI Badge](https://img.shields.io/badge/doi-10.5281/zenodo.18137674-1284C5.png)](https://doi.org/10.5281/zenodo.18137674)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/davidlday/vscode-languagetool-linter/nodejs-ci.yml)](https://github.com/danielvartan/logoscope/actions/workflows/build.yml)
-[![GPLv3 License Badge](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 [![FAIR checklist badge](https://img.shields.io/badge/fairsoftwarechecklist.net--00a7d9.png)](https://fairsoftwarechecklist.net/v0.2?f=31&a=30112&i=02322&r=123)
 [![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F-green.png)](https://fair-software.eu)
+[![GPLv3 License Badge](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 [![Contributor Covenant 3.0 Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.png)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
 <!-- badges: end -->
 
 ## Overview
 
-`LogoScope` is a Visual Studio Code extension that provides syntax highlighting for the [NetLogo](https://www.netlogo.org/) programming language. It supports all NetLogo file extensions (`.nlogo`, `.nlogo3d`, `.nls`, `.nlogox`, `.nlogox3d`) and builds on [akash raj](https://github.com/akashrajkn)'s [NetLogo Syntax Highlighting](https://github.com/akashrajkn/language-netlogo-code) extension, last updated in 2020.
+`LogoScope` is a [Visual Studio Code](https://code.visualstudio.com/) extension that provides syntax highlighting for the [NetLogo](https://www.netlogo.org/) programming language. It supports all NetLogo file extensions (`.nlogo`, `.nlogo3d`, `.nls`, `.nlogox`, `.nlogox3d`) and builds on [akash raj](https://github.com/akashrajkn)'s [NetLogo Syntax Highlighting](https://github.com/akashrajkn/language-netlogo-code) extension, last updated in 2020.
 
 > If you find this project useful, please consider giving it a star! [![GitHub repo stars](https://img.shields.io/github/stars/danielvartan/logoscope)](https://github.com/danielvartan/logoscope/)
 
@@ -70,7 +70,7 @@ git clone https://github.com/danielvartan/logoscope
 npm install
 ```
 
-3. Run the extension in development mode by pressing `F5`.
+3. Run the extension in development mode by pressing `F5` or going to *Debug: Start Debugging* in the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 
 The syntax highlighting is designed to closely match NetLogo's original highlighting. You can use the test files in the `models` folder to evaluate highlighting accuracy.
 

@@ -66,11 +66,11 @@ repository:
           name: storage.type.class.netlogo
         "2":
           name: entity.name.type.class.netlogo
-      match: ^\s*(to|to-report)\s+(\w+[-\w]*)
+      match: ^\s*(to|to-report)\s+(\w[\w-]*)
   keywords:
     patterns:
     - name: keyword.control.import.netlogo
-      match: (?:(?<=^)|(?<=[\s\(\[]))(__includes|extensions)(?=$|[\s\)\]])
+      match: (?:(?<=^)|(?<=[\s]))(__includes|extensions)(?=$|[\s\)\]])
     - name: storage.modifier.global.netlogo
       match: (?:(?<=^)|(?<=[\s\(\[]))(breed|globals|directed-link-breed|undirected-link-breed)(?=$|[\s\)\]])
     - name: storage.modifier.global.netlogo
