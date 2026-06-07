@@ -1,6 +1,7 @@
 ## v0.1.7.9000 (development version)
 
-- A [Zenodo](https://zenodo.org) DOI has been created for this extension.
+- Added `wordPattern` to `language-configuration.json` (#11).
+- A [Zenodo](https://zenodo.org) DOI has been created for the extension.
 
 ## v0.1.6 (2026-01-03)
 
