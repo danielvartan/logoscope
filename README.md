@@ -2,8 +2,10 @@
 
 <!-- badges: start -->
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-4cc61e.png)](https://www.repostatus.org/#active)
-[![Visual Studio Marketplace: Installs](https://img.shields.io/visual-studio-marketplace/i/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
-[![Visual Studio Marketplace: Version](https://img.shields.io/visual-studio-marketplace/v/danielvartan.logoscope)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
+[![Visual Studio Marketplace: Version](https://vsmarketplacebadges.dev/version/danielvartan.logoscope.svg?&colorB=orange)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
+[![Visual Studio Marketplace: Installs](https://vsmarketplacebadges.dev/installs/danielvartan.logoscope.svg)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
+[![Visual Studio Marketplace: Downloads](https://vsmarketplacebadges.dev/downloads/danielvartan.logoscope.svg)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
+[![Rating Star](https://vsmarketplacebadges.dev/rating-star/danielvartan.logoscope.svg)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Open VSX Registry: Version](https://img.shields.io/open-vsx/v/danielvartan/logoscope)](https://open-vsx.org/extension/danielvartan/logoscope)
 [![DOI Badge](https://img.shields.io/badge/doi-10.5281/zenodo.18137674-1284C5.png)](https://doi.org/10.5281/zenodo.18137674)
 [![Build Status](https://github.com/danielvartan/logoscope/actions/workflows/build.yaml/badge.svg)](https://github.com/danielvartan/logoscope/actions/workflows/build.yaml)
@@ -18,8 +20,6 @@
 `LogoScope` is a [Visual Studio Code](https://code.visualstudio.com/) extension that provides syntax highlighting for the [NetLogo](https://www.netlogo.org/) programming language. It supports all NetLogo file extensions (`.nlogo`, `.nlogo3d`, `.nls`, `.nlogox`, `.nlogox3d`) and builds on [akash raj](https://github.com/akashrajkn)'s [NetLogo Syntax Highlighting](https://github.com/akashrajkn/language-netlogo-code) extension, last updated in 2020.
 
 > If you find this project useful, please consider giving it a star! [![GitHub repo stars](https://img.shields.io/github/stars/danielvartan/logoscope)](https://github.com/danielvartan/logoscope/)
-
-> The continuous development of `LogoScope` depends on community support. If you find this project useful, and can afford to do so, please consider becoming a sponsor. &nbsp; [![GitHub Sponsors Badge](https://img.shields.io/badge/Sponsor-%E2%9D%A4-%23ea857e?logo=github&logoColor=white.png)](https://github.com/sponsors/danielvartan)
 
 ![NetLogo Syntax Highlighting](images/code.png)
 
