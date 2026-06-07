@@ -15,31 +15,18 @@ abstract: >-
   (.nlogo, .nlogo3d, .nls, .nlogox, .nlogox3d) and builds on akash raj's NetLogo
   Syntax Highlighting extension, last updated in 2020.
 keywords:
-  - Agent-Based Modeling
+  - Syntax Highlighting
+  - NetLogo (Programming Language)
+  - Logo (Programming Language)
   - Code Highlighting
+  - Programming Language Support
+  - Agent-Based Modeling
+  - Individual-Based Modeling
+  - Multi-Agent Systems
   - Complex Systems
   - Complexity Science
   - Computational Modeling
   - Computational Science
-  - Ecological Modeling
-  - Education
-  - Generative Science
-  - Individual-Based Modeling
-  - Logo Language
-  - Logo Syntax
-  - Logo
-  - Modeling
-  - Multi-Agent Systems
-  - NetLogo Language
-  - NetLogo Model
-  - NetLogo Source File
-  - NetLogo Syntax
-  - NetLogo XML Model
-  - NetLogo
-  - Programming Language Support
-  - Scientific Computing
-  - Syntax Highlighting
-  - System Dynamics
 preferred-citation:
   type: software
   title: "LogoScope: NetLogo syntax highlighting for Visual Studio Code"

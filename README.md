@@ -81,7 +81,7 @@ See the [Useful Resources](#useful-resources) section for more information on de
 [![GNU GPLv3 License](https://img.shields.io/badge/license-GPLv3-bd0000.png)](https://www.gnu.org/licenses/gpl-3.0)
 
 ```text
-Copyright (C) 2025 Daniel Vartanian
+Copyright (C) 2026 Daniel Vartanian
 
 LogoScope is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software

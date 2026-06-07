@@ -1,7 +1,7 @@
-## v0.1.7.9000 (development version)
+## v0.1.7 (2026-06-07)
 
-- Added `wordPattern` to `language-configuration.json` (#11).
-- A [Zenodo](https://zenodo.org) DOI has been created for the extension.
+- Added `wordPattern` to `language-configuration.json` (fixes #11). Words are now highlighted properly.
+- The extension is now registered with a [Zenodo](https://zenodo.org) DOI.
 
 ## v0.1.6 (2026-01-03)
 
