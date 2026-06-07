@@ -1,3 +1,5 @@
+## v0.1.8.9000 (development version)
+
 ## v0.1.7 (2026-06-07)
 
 - Added `wordPattern` to `language-configuration.json` (fixes #11). Words are now highlighted properly.
