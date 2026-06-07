@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-4cc61e.png)](https://www.repostatus.org/#active)
-[![Visual Studio Marketplace: Version](https://vsmarketplacebadges.dev/version/danielvartan.logoscope.svg?&colorB=orange)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
+[![Visual Studio Marketplace: Version](https://vsmarketplacebadges.dev/version-short/danielvartan.logoscope.svg?&colorB=orange)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Visual Studio Marketplace: Installs](https://vsmarketplacebadges.dev/installs/danielvartan.logoscope.svg)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Visual Studio Marketplace: Downloads](https://vsmarketplacebadges.dev/downloads/danielvartan.logoscope.svg)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
 [![Rating Star](https://vsmarketplacebadges.dev/rating-star/danielvartan.logoscope.svg)](https://marketplace.visualstudio.com/items?itemName=danielvartan.logoscope)
